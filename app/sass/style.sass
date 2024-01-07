@@ -38,6 +38,7 @@ body
     width: 680px
     max-width: 100%
     box-shadow: 0px 1px 5px rgba(#000, 0.1)
+    z-index: 999
 .logo
     display: flex 
     align-items: center 
@@ -100,7 +101,7 @@ body
     align-items: center
     justify-content: center
     border: 1px solid #FD9015
-    border-radius: 15px
+    border-radius: 20px
     height: 50px
     img 
         margin: 0 5px
@@ -116,17 +117,18 @@ body
 .plan-item
     margin-bottom: 10px
     background: #F2F2F2
-    border-radius: 15px
+    border-radius: 20px
     overflow: hidden
 .plan-item__header
-    padding: 15px
+    padding: 7px 7px
     display: flex 
     justify-content: space-between 
     align-items: center
     cursor: pointer
 .plan-item__btn
-    width: 20px 
-    height: 20px 
+    width: 18px 
+    min-width: 18px
+    height: 18px 
     border-radius: 50%
     border: 2px solid #3c4043
 .plan-item__left
@@ -135,7 +137,7 @@ body
 .plan-item__text-content
     margin-left: 10px
 .plan-item__title
-    font-size: 18px 
+    font-size: 16px 
     color: #000
     font-weight: 600
 .price-wrapper
@@ -143,7 +145,7 @@ body
     border-radius: 15px
     height: 100%
     border-radius: 15px
-    padding: 5px 10px
+    padding: 5px 8px
     display: flex
     align-items: center
 .currency
@@ -151,7 +153,7 @@ body
     font-size: 18px
     color: #000
 .price 
-    font-size: 34px
+    font-size: 28px
     font-weight: 500
     padding-left: 3px 
     padding-right: 3px
@@ -189,8 +191,8 @@ body
         justify-content: center 
         align-items: center
         span 
-            width: 10px 
-            height: 10px 
+            width: 8px 
+            height: 8px 
             border-radius: 50%
             background:#FFF4E4
             display: block
@@ -235,6 +237,7 @@ body
 //start logos section
 .logos-section
     text-align: center
+    color: #848484
 .logos-wrapper 
     display: flex 
     justify-content: center
@@ -270,13 +273,18 @@ body
     display: flex 
     justify-content: center 
     align-items: center
-    border-radius: 15px
+    border-radius: 50px
     font-size: 18px
     font-weight: 500
     width: 100% 
     max-width: 680px
     margin-left: auto 
     margin-right: auto
+.price-detail
+    line-height: 1
+.per,
+.plan-item__sub-title
+    font-size: 12px
 @import "media"
 
 

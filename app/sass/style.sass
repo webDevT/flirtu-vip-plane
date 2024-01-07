@@ -1,0 +1,276 @@
+@import "vars"
+@import "fonts"
+
+//start global style 
+*
+    box-sizing: border-box
+body 
+    font-family: sans-serif
+    font-size: 14px
+    margin: 0 
+    padding: 0
+    color:#3c4043
+.content 
+    width: 680px
+    max-width: 100%
+    margin-left: auto 
+    margin-right: auto
+    padding-top: 80px
+.container
+    width: 92%
+    margin-left: auto 
+    margin-right: auto
+
+
+//end global style
+
+//start header style 
+.plans-header 
+    background: rgba(#F2F2F2, .7)
+    backdrop-filter: blur(10px)
+    position: fixed 
+    top: 0 
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+    padding-top: 10px 
+    padding-bottom: 10px
+    width: 680px
+    max-width: 100%
+    box-shadow: 0px 1px 5px rgba(#000, 0.1)
+.logo
+    display: flex 
+    align-items: center 
+    justify-content: center
+    text-decoration: none 
+    color:#3c4043
+    img 
+        width: 40px
+        display: block
+.logo__text
+    margin-left: 5px
+    font-weight: 700
+    font-size: 20px
+
+//end header style 
+
+//start user info wrapper style
+.user-info-wrapper
+    margin-bottom: 10px
+    .container
+        display: flex
+        align-items: center
+    .container
+        background: #F2F2F2
+        padding: 15px
+        border-radius: 15px
+.user-photo
+    width: 100% 
+    height: 100% 
+    object-fit: cover
+    object-position: center 
+    border-radius: 50%
+.user-photo-wrapper
+    min-width: 70px
+    width: 70px 
+    height: 70px 
+    margin-right: 10px 
+    position: relative 
+.user-photo-wrapper:after 
+    content: ''
+    width: 11px 
+    height: 11px
+    background: #60B724
+    display: block
+    position: absolute
+    border-radius: 50%
+    border: 3px solid #fff
+    bottom: 0 
+    right: 2px
+.user-info-text 
+    font-size: 16px  
+//end user info wrapper style
+
+//start button style 
+.button 
+    display: flex
+    justify-content: center 
+    align-items: center
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid #FD9015
+    border-radius: 15px
+    height: 50px
+    img 
+        margin: 0 5px
+    img:first-child 
+        width: 50px
+    img:nth-child(2)
+        width: 30px
+.button-wrapper
+    margin-bottom: 10px
+//end button style 
+
+//start plans list
+.plan-item
+    margin-bottom: 10px
+    background: #F2F2F2
+    border-radius: 15px
+    overflow: hidden
+.plan-item__header
+    padding: 15px
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    cursor: pointer
+.plan-item__btn
+    width: 20px 
+    height: 20px 
+    border-radius: 50%
+    border: 2px solid #3c4043
+.plan-item__left
+    display: flex 
+    align-items: center
+.plan-item__text-content
+    margin-left: 10px
+.plan-item__title
+    font-size: 18px 
+    color: #000
+    font-weight: 600
+.price-wrapper
+    background: #E6E6E6 
+    border-radius: 15px
+    height: 100%
+    border-radius: 15px
+    padding: 5px 10px
+    display: flex
+    align-items: center
+.currency
+    font-weight: 600
+    font-size: 18px
+    color: #000
+.price 
+    font-size: 34px
+    font-weight: 500
+    padding-left: 3px 
+    padding-right: 3px
+    color: #000
+.centes
+    font-size: 16px
+    font-weight: 600
+    color: #000
+.price-item__detailes
+    padding: 15px
+    display: none
+.detail-item
+    margin-bottom: 10px
+    display: flex 
+    align-items: center
+
+.detail-item__icon
+    min-width: 25px
+    display: flex 
+    align-items: center
+    img 
+        max-width: 18px
+        max-height: 18px
+.plan-item.active 
+   .plan-item__header
+        background: #FD9015
+.plan-item.active 
+    .plan-item__title
+        color: #FFF4E4
+    .plan-item__sub-title
+        color: #FFF4E4
+    .plan-item__btn
+        border-color: #FFF4E4
+        display: flex 
+        justify-content: center 
+        align-items: center
+        span 
+            width: 10px 
+            height: 10px 
+            border-radius: 50%
+            background:#FFF4E4
+            display: block
+    .price-wrapper
+        background: #FFF4E4
+    .price-item__detailes
+        display: block
+.plan-item__right
+    display: flex
+    align-items: center   
+.old-price
+    display: flex 
+    align-items: center    
+    padding-left: 5px 
+    padding-right: 5px 
+    margin-left: 10px 
+    margin-right: 10px
+    position: relative  
+.old-price:after 
+    content: ''
+    width: 100% 
+    height: 1px 
+    display: block 
+    position: absolute
+    top: 50% 
+    left: 50%
+    background: #BB1819 
+    transform: translateX(-50%) translateY(-50%) 
+.price--s
+    font-size: 18px 
+.price--s
+    padding-left: 3px 
+    padding-right: 3px
+    color: #000
+.price-xs
+    color: #000
+.logos-section
+    padding-top: 30px 
+    padding-bottom: 15px
+//end plans list
+
+//start logos section
+.logos-section
+    text-align: center
+.logos-wrapper 
+    display: flex 
+    justify-content: center
+    align-items: center
+    padding-top: 15px
+    padding-bottom: 0px
+    flex-wrap: wrap
+    img
+        margin: 7.5px 10px
+//end logos section 
+.terms-text
+    text-align: center
+    color: #848484
+    padding-bottom: 100px
+    a 
+        color: #848484
+        text-decoration: underline
+.footer 
+    position: fixed 
+    bottom: 0 
+    left: 0
+    width: 100%
+    padding: 10px 0
+    background: #fff
+    box-shadow: 0px -1px 5px rgba(#000, 0.1)
+.green-button 
+    background: #60B724
+    height: 50px 
+    color: #fff 
+    display: flex 
+    justify-content: center 
+    align-items: center
+    border-radius: 15px
+    font-size: 18px
+    font-weight: 500
+@import "media"
+
+
+
